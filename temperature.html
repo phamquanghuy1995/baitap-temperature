@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class temperature {
+        degreec;
+
+        constructor(degreec) {
+            this.degreec = degreec;
+        }
+
+        getdegreec() {
+            return this.degreec;
+        }
+
+        setdegreec() {
+            this.degreec;
+        }
+
+        getdoidegreef() {
+            return 9 * this.degreec / 5 + 32
+        }
+        getdoikevin(){
+            return this.degreec+273
+        }
+    }
+    let Temperature = new temperature(25);
+    document.write("Độ F là :"+ Temperature.getdoidegreef())
+    document.write("<br>");
+    document.write("Độ Kelvin là :" + Temperature.getdoikevin())
+</script>
+</body>
+</html>
